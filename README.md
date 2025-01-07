@@ -45,20 +45,8 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 **PROGRAM**:
 
-```
-module jk(J,K,clk,q,qbar);
-input J,K,clk;
-output reg q;
-output reg qbar;
-initial q=0;
-initial qbar=1;
-always @(posedge clk)
-begin 
-q=((J&(~q))|((~K)&q));
-qbar=~q;
-end
-endmodule
-```
+![Screenshot 2025-01-07 123902](https://github.com/user-attachments/assets/57106414-c7d1-4b5e-9d72-ffbc1dadcfc0)
+
 
 
 **RTL LOGIC FOR FLIPFLOPS:**
